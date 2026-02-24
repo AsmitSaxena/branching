@@ -1,0 +1,37 @@
+====================== MANDATORY STEP ======================
+
+~ Always check STATUS.
+
+
+====================== BEFORE COMMITING ======================
+
+1. Added wrong file 
+    solution : git reset filename
+
+2. want to undo all unstaged files
+    solution : git reset
+
+
+====================== AFTER COMMITING =======================
+
+
+3. wrong commit message
+    solution : git commit --amend -m "write new commit message"
+
+4. commited wrong code (not pushed yet)
+    solution : git reset --soft HEAD~1
+             
+             ~ removes last commit
+             ~ keeps your code changes
+
+5. want to completely discard last commit
+    solution : git reset --hard HEAD~1
+
+
+
+====================== AFTER PUSH ======================
+
+
+
+6. Already pushed wrong code
+     solution : git reset HEAD
